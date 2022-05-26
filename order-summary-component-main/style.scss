@@ -1,0 +1,81 @@
+$paleblue: hsl(225, 100%, 94%);
+$brightblue: hsl(245, 75%, 52%);
+$verypaleblue: hsl(225, 100%, 98%);
+$desaturatedblue: hsl(224, 23%, 55%);
+$darkblue: hsl(223, 47%, 23%);
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0px;
+    max-width: 1440px;
+    max-height: 1056px;
+    .card {
+        max-width: 450px;
+        margin: 20px auto;
+        border-radius: 20px;
+        box-shadow: 0px 10px 20px rgba(190,190,190);
+        .order {
+            margin: auto;
+            width: 80%;
+            p {
+                color: $desaturatedblue;
+            }
+        }
+        .img img {
+            border-radius: 20px 20px 0px 0px;
+        }
+        .plan {
+            display: grid;
+            grid-auto-flow: column;
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            background-color: $verypaleblue;
+            border-radius: 20px;
+            img {
+                margin: auto;
+            }
+            .text {
+                text-align: left;
+                h2 {
+                    margin-bottom: 5px;
+                }
+                p {
+                    margin-top: 0px;
+                    color: $desaturatedblue;
+                }
+            }
+            a {
+                margin: auto;
+            }
+        }
+        .button {
+            width: 80%;
+            margin: 20px auto;
+            height: 40px;
+            border-radius: 10px;
+            background-color: $brightblue;
+            box-shadow: 0px 10px 15px $desaturatedblue;
+            a {
+                color: $paleblue;
+                font-weight: 900;
+                text-decoration: none;
+            }
+        }
+        .cancel {
+            a, :active {
+                text-decoration: none;
+                color: $desaturatedblue;
+                font-weight: 700;
+            }
+        }
+        .attribution{
+            margin-top: 20px;
+        }
+    }
+}
